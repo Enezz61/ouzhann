@@ -281,4 +281,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Lock all video volumes to mute - prevent any sound playback
+    document.querySelectorAll('video').forEach(video => {
+        video.volume = 0;
+        // Prevent volume change attempts
+        video.addEventListener('volumechange', function(e) {
+            if (this.volume !== 0) {
+                this.volume = 0;
+            }
+        });
+    });
+
 });
