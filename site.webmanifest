@@ -1,0 +1,16 @@
+{
+  "name": "Ouzhann Group",
+  "short_name": "Ouzhann",
+  "description": "İstanbul inşaat ve dekorasyon hizmetleri",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A3A52",
+  "theme_color": "#1A3A52",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
